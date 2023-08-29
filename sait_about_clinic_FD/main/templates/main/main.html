@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="shortcut icon" href="{% static 'main/img/icon_clinic_title.jpg' %}" type="image/x-icon">
+    <title>Клиника УЗД</title>
+</head>
+<body>
+    <header>
+        <button type="button" onclick="history.forward();">Вперёд</button>
+        <h1>Клиника УЗД</h1>
+    </header>
+
+    <main>
+        <h1>О нашей клинике:</h1>
+        <p>Наши врачи - это люди которые постоянно учатся. Клиника оснащена новейшим оборудованием. В ней есть все необходимое
+            для вашего лечения или обследования.</p>
+        <h2>Плюсы клиники:</h2>
+        <ol>
+            <li>Высококвалифицированые врачи </li>
+            <li>Вежливый персонал</li>
+            <li>Чистота и порядок</li>
+        </ol>
+        <h2>Фотографии клиники:</h2>
+        <img src="{% static 'main/img/клиника снаружи.jpg' %}">
+        <img src="{% static 'main/img/кабинет.jpg' %}">
+
+        <h2>Наш адрес:</h2>
+        <a href="" target="_blank"><img id="icon_place_clinic" src="{% static 'main/img/icon_place_clinic.jpg' %}">Докторския район, Улица Врачебная, дом 123б</a>
+    </main>
+
+
+    <aside>
+        <form action="{% url 'registration' %}"><button>Регистрация</button></form>
+        <form action="{% url 'list_services' %}"><button>Список услуг</button></form>
+        <form action="{% url 'doctors' %}"><button>Врачи</button></form>
+        <form action=""><button>Отзывы</button></form>
+        <form action="{% url 'user_profile' %}" method="get"><button>Профиль</button></form>
+    </aside>
+
+
+    <footer>
+        <span>
+            <h2>Наши социальные сети:</h2>
+            <a href="#">VK</a>
+        </span>
+    </footer>
+    
+
+</body>
+</html>

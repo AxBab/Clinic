@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{% static 'main/css/registration.css' %}">
+    <link rel="shortcut icon" href="{% static 'main/img/icon_clinic_title.jpg' %}" type="image/x-icon">
+    <script src="{% static 'main/js/registration.js' %}" defer></script>
+</head>
+<body>
+    <header id="main_header">
+        <button onclick="history.back();">Назад</button>
+        <h1>Регистрация</h1>
+    </header>
+    
+    <main>
+        <form action="{% url 'user_profile' %}" method="post">{% csrf_token %}
+            <label for="name">Имя</label>
+            <input id="name" placeholder="Иван" name="name" type="text" required>
+            <label for="surname">Фамилия</label>
+            <input id="surname" placeholder="Иванов" name="surname" type="text" required>
+            <label>Пол</label>
+            <span>
+                <label for="pol_boy">Мужчина</label>
+                <input id="pol_boy" name="pol_boy" type="checkbox">
+                <label for="pol_girl">Женщина</label>
+                <input id="pol_girl" name="pol_girl" type="checkbox">
+            </span>
+            <label for="age">Возраст</label>
+            <input id="age" placeholder="30" name="age" type="tel" maxlength="3" required>
+            <label for="phone">Телефон</label>
+            <input id="phone" placeholder="888888888888" name="phone" type="tel" maxlength="12" required>
+            <label for="email">Электронная почта</label>
+            <input id="email" placeholder="pacient@gmail.com" name="email" type="email" required>
+            <label for="password">Придумайте пароль</label>
+            <input id="password" placeholder="7q2W!8e4R" name="password" type="password" required>
+            <button id="submit_button" type="submit">Зарегистрироваться</button>
+            <button id="" type="reset">Очистить</button>
+        </form>
+    </main>
+
+</body>
+</html>

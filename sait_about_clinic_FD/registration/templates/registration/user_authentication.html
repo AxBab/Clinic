@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аутентификация</title>
+    <link rel="shortcut icon" href="{% static 'main/img/icon_clinic_title.jpg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'main/css/user_authentication.css' %}">
+</head>
+<body>
+    <header id="main_header">
+        <button type="button" onclick="history.back();">Назад</button>
+        <h1>Вход в аккаунт</h1>
+    </header>
+
+    <main>
+        <form action="{% url 'user_profile' %}" method="post">{% csrf_token %}
+            <label for="FIO">ФИО</label>
+            <input name="FIO" placeholder="Иванов Иван Иванович" required>
+            <label for="password">Пароль</label>
+            <input name="password" placeholder="1q2w3e4r!Q" type="password" required>
+            <button type="submit">Войти</button>
+            <a href="{% url 'registration' %}">Нет аккаунта?</a>
+        </form>
+    </main>
+</body>
+</html>

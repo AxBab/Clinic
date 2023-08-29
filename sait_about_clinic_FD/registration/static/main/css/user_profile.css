@@ -1,0 +1,113 @@
+body {
+    font-size: 24px;
+    background: linear-gradient(to top, rgb(55, 55, 255), rgb(170, 170, 255));
+    height: 100vh;
+    font-family: Arial;
+}
+
+
+
+#main_header {
+    float: top;
+    position: fixed;
+    z-index: 3;
+    background: linear-gradient(to left, rgb(141, 141, 255), rgb(89, 89, 255));
+    width: 101%;
+    height: 12%;
+    top: 0px;
+    left: 0px;
+    border-bottom: 4px rgb(0, 32, 159) solid;
+}
+
+#main_header form {
+    height: 100%;
+}
+
+#main_header h1 {
+    margin: 15px;
+    margin-left: 42.5%;
+}
+
+#main_header button {
+    font-size: 32px;
+    width: 10%;
+    height: 60%;
+    margin: 20px;
+    margin-left: 20px;
+    margin-top: 0px;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgb(70, 70, 255), rgb(134, 134, 255));
+    float: left;
+    transition: all .6s ease;
+    box-shadow: 3px 3px 3px;
+}
+#main_header button:hover {
+    translate: -10px;
+    transform: scale(1.05);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px;
+}
+
+
+
+main {
+    margin-top: 15vh;
+}
+
+
+main form {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2.5vw;
+    width: 95%;
+    height: 90vh;
+    border: 4px rgb(26, 26, 113) solid;
+    border-radius: 20px;
+    background: linear-gradient(to top left, rgb(70, 70, 255), rgb(140, 140, 255));
+}
+
+form span {
+    display: flex;
+    height: 75%;
+    margin-top: 2vh;
+}
+
+form span img {
+    margin-top: 3%;
+    width: 80%;
+    height: 75%;
+}
+
+form span div#image {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form span div#image input {
+    margin-top: 4%;
+    width: 53%;
+}
+
+form span div#info h1{
+    margin-top: 3.9vh;
+}
+
+
+main form button {
+    font-size: 24px;
+    width: 20%;
+    height: 7vh;
+    margin-top: 2vh;
+    border: 2px rgb(27, 27, 97) solid;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgb(90, 90, 255), rgb(170, 170, 255));
+    transition: all .6s ease;
+}
+main form button:hover {
+    transform: scale(1.1);
+    border-radius: 25px;
+}
+

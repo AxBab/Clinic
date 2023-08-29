@@ -1,0 +1,156 @@
+body {
+    font-size: 24px;
+    background: linear-gradient(to top, rgb(55, 55, 255), rgb(170, 170, 255));
+    height: 140vh;
+    font-family: Arial;
+}
+
+
+
+main {
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+
+
+header {
+    float: top;
+    position: fixed;
+    z-index: 3;
+    background: linear-gradient(to left, rgb(141, 141, 255), rgb(89, 89, 255));
+    width: 101%;
+    height: 12%;
+    top: 0px;
+    left: 0px;
+    border-bottom: 4px rgb(0, 32, 159) solid;
+}
+
+header h1 {
+    margin: 15px;
+    margin-left: 40%;
+}
+
+header button {
+    font-size: 32px;
+    width: 10%;
+    height: 60%;
+    margin: 20px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgb(70, 70, 255), rgb(134, 134, 255));
+    float: right;
+    transition: all .6s ease;
+    box-shadow: 3px 3px 3px;
+}
+header button:hover {
+    translate: 15px;
+    transform: scale(1.05);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px;
+}
+
+
+
+aside {
+    background: linear-gradient(to top, rgb(123, 123, 255), rgb(98, 98, 255));
+    position: fixed;
+    float: left;
+    width: 20%;
+    height: 88%;
+    border-right: 3px rgb(0, 32, 159) solid;
+    top: +12%;
+    left: 0px;
+    z-index: 2;
+}
+
+aside button {
+    font-size: 32px;
+    width: 70%;
+    height: 7vh;
+    margin: 35px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgb(70, 70, 255), rgb(134, 134, 255));
+    transition: all .5s ease;
+    box-shadow: 3px 3px 3px;
+}
+aside button:hover {
+    translate: 10px;
+    transform: scale(1.05);
+    box-shadow: 6px 6px 6px;
+    border-radius: 20px;
+}
+
+
+
+footer {
+    margin-left: 19.95%;
+    margin-top: 5%;
+    height: 25vh;
+    width: 80.7%;
+    background: rgb(40, 38, 94);
+    position: relative;
+    left: -2px;
+    border-top: 4px rgb(10, 10, 10) solid;
+    color: rgb(106, 115, 194);
+}
+
+footer h2 {
+    margin: 15px;
+}
+
+footer a {
+    font-size: 32px;
+    text-decoration: none;
+    color: rgb(104, 113, 190);
+    margin-left: 25px;
+    transition: all .6s ease;
+    width: 50px;
+    display: grid;
+}
+footer a:hover {
+    transform: scale(1.2);
+}
+
+
+img {
+    box-shadow: 10px 10px 15px 5px;
+    border: 3px rgb(28, 49, 143) solid;
+    border-radius: 10px;
+    width: 45%;
+    height: 30vh;
+    margin-right: 2vw;
+}
+
+
+
+h2 {
+    margin-top: 8vh;
+}
+
+
+
+a {
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 49);
+    transition: all .6s ease;
+    width: 47vw;
+}
+a:hover {
+    transform: scale(1.02);
+}
+
+
+
+#icon_place_clinic {
+    width: 30px;
+    height: 30px;
+    box-shadow: none;
+    margin-right: 2px;
+    position: relative;
+    top: +5px;
+    border: none;
+}
+

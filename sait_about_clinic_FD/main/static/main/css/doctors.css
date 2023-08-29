@@ -1,0 +1,115 @@
+body {
+    font-size: 24px;
+    background: linear-gradient(to top, rgb(55, 55, 255), rgb(170, 170, 255));
+    height: 230vh;
+    font-family: Arial;
+}
+
+
+
+#main_header {
+    float: top;
+    position: fixed;
+    z-index: 3;
+    background: linear-gradient(to left, rgb(141, 141, 255), rgb(89, 89, 255));
+    width: 101%;
+    height: 12%;
+    top: 0px;
+    left: 0px;
+    border-bottom: 4px rgb(0, 32, 159) solid;
+}
+
+#main_header h1 {
+    margin: 15px;
+    margin-left: 40%;
+}
+
+#main_header button {
+    font-size: 32px;
+    width: 10%;
+    height: 60%;
+    margin: 20px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgb(70, 70, 255), rgb(134, 134, 255));
+    float: left;
+    transition: all .6s ease;
+    box-shadow: 3px 3px 3px;
+}
+#main_header button:hover {
+    translate: -10px;
+    transform: scale(1.05);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px;
+}
+
+
+
+main {
+    margin-top: 11vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+section {
+    width: 95%;
+    height: 70vh;
+    margin-left: 2.5%;
+    border: 3px rgb(16, 16, 111) solid;
+    border-radius: 25px;
+    display: flex;
+    margin-top: 7vh;
+    background: linear-gradient(to top left, rgb(70, 70, 240), rgb(161, 161, 255));
+}
+
+section span {
+    width: 60%;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+section img {
+    width: 25%;
+    height: 90%;
+    margin: 1.5%;
+    border: 2px rgb(46, 46, 146) solid;
+    border-radius: 25px;
+}
+
+
+section button {
+    font-size: 24px;
+    width: 25%;
+    height: 10vh;
+    border: 2px rgb(19, 19, 92) solid;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgb(107, 107, 255), rgb(136, 136, 255));
+    transition: all .4s ease;
+}
+section button:hover {
+    transform: scale(1.05);
+    box-shadow: inset 9em 0px rgb(72, 72, 220);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+section a {
+    text-decoration: none;
+    color: rgb(41, 41, 137);
+    transition: all .5s ease;
+    display: grid;
+    width: 50px;
+}
+section a:hover {
+    transform: scale(1.2);
+    color: rgb(20, 20, 94);
+}
+
+
+
+
+
+

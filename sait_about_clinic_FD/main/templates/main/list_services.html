@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/list_services.css' %}">
+    <title>Услуги</title>
+    <link rel="shortcut icon" href="{% static 'main/img/icon_clinic_title.jpg' %}" type="image/x-icon">
+</head>
+<body>
+    <header id="main_header">
+        <button onclick="history.back();">Назад</button>
+        <h1>Наши услуги</h1>
+    </header>
+
+    <main>
+        <section>
+            <header>
+                <h2>Диагностика сосудов головы и шеи</h2>
+            </header>
+            <h2 class="price">Цена: 1500р</h2>
+            <button>Записаться</button>
+        </section>
+            
+        <section>
+            <header>
+                <h2>ЭХОКГ</h2>
+            </header>
+            <h2 class="price">Цена: 1600р</h2>
+            <button>Записаться</button>
+        </section>
+
+        <section>
+            <header>
+                <h2>Диагностика брюшной полости</h2>
+            </header>
+            <h2  class="price">Цена: 2500р</h2>
+            <button>Записаться</button>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    font-size: 24px;
+    background: linear-gradient(to top, rgb(55, 55, 255), rgb(170, 170, 255));
+    height: 140vh;
+    font-family: Arial;
+}
+
+
+
+#main_header {
+    float: top;
+    position: fixed;
+    z-index: 3;
+    background: linear-gradient(to left, rgb(141, 141, 255), rgb(89, 89, 255));
+    width: 101%;
+    height: 12%;
+    top: 0px;
+    left: 0px;
+    border-bottom: 4px rgb(0, 32, 159) solid;
+}
+
+#main_header h1 {
+    margin: 15px;
+    margin-left: 39%;
+}
+
+#main_header button {
+    font-size: 32px;
+    width: 10%;
+    height: 60%;
+    margin: 20px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgb(70, 70, 255), rgb(134, 134, 255));
+    float: left;
+    transition: all .6s ease;
+    box-shadow: 3px 3px 3px;
+}
+#main_header button:hover {
+    translate: -10px;
+    transform: scale(1.05);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 70vh;
+    border: 3px rgb(31, 31, 141) solid;
+    border-radius: 20px;
+    background: linear-gradient(to top, rgb(100, 100, 255), rgb(150, 150, 255));
+    position: relative;
+}
+
+label {
+    margin-top: 8%;
+}
+
+
+form label {
+    font-size: 28px;
+}
+
+form input {
+    color: rgb(30, 30, 30);
+    font-size: 22px;
+    text-align: center;
+    margin-top: 2%;
+    width: 80%;
+    height: 8%;
+    border: 2px rgb(32, 32, 116) solid;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgb(150, 150, 255),rgb(195, 195, 254));
+    transition: all .4s linear;
+}
+form input:hover {
+    transform: scale(1.05);
+}
+form input:focus {
+    background: linear-gradient(to top, rgb(110, 110, 255), rgb(150, 150, 255));
+}
+
+form button {
+    margin-top: 8%;
+    width: 50%;
+    height: 10%;
+    font-size: 28px;
+    background: linear-gradient(to top, rgb(150, 150, 255), rgb(190, 190, 255), rgb(150, 150, 255));
+    border: 2px rgb(43, 43, 138) solid;
+    border-radius: 10px;
+    transition: all .5s linear;
+}
+form button:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+
+
+form a {
+    color: rgb(40, 40, 130);
+    text-decoration: none;
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    display: grid;
+    transition: all .7s ease;
+}
+form a:hover {
+    transform: scale(1.08);
+    color: rgb(22, 22, 82);
+}
+
+
+
+
+
+
+

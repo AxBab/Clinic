@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Врачи клиники УЗД</title>
+    <link rel="stylesheet" href="{% static 'main/css/doctors.css' %}">
+    <link rel="shortcut icon" href="{% static 'main/img/icon_clinic_title.jpg' %}" type="image/x-icon">
+</head>
+<body>
+    <header id="main_header">
+        <button onclick="history.back();">Назад</button>
+        <h1>Наши врачи</h1>
+    </header>
+
+    <main>
+        <section>
+            <img src="{% static 'main/img/empty_user_photo.jpg' %}">
+            <span>
+                <h2>Иванов Иван Иванович</h2>
+                <article>Врач-УЗД, проводит обследование: сосудов головы и шеи, селезёнки, печени, брюшной полости,
+                    мочевыделительной системы. Продиагностирует вас на любом сроке беременности.</article>
+                <nav>
+                    <h3>Социальные сети:</h3>
+                    <ol>
+                        <li><a href="" target="_blank">VK</a></li>
+                    </ol>
+                    <button type="button">Записаться на приём</button>
+                </nav>
+            </span>
+        </section>
+
+        <section>
+            <img src="{% static 'main/img/empty_user_photo.jpg' %}">
+            <span>
+                <h2>Иванова Мария Ивановна</h2>
+                <article>Врач-кардиолог и функциональной диагностики</article>
+                <nav>
+                    <h3>Социальные сети:</h3>
+                    <ol>
+                        <li><a href="" target="_blank">VK</a></li>
+                    </ol>
+                    <button type="button">Записаться на приём</button>
+                </nav>
+            </span>
+        </section>
+    </main>
+
+</body>
+</html>

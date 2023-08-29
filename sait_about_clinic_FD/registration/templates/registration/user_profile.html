@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'main/js/registration.js' %}" defer></script>
+    <link rel="stylesheet" href="{% static 'main/css/user_profile.css' %}">
+    <title>Профиль</title>
+    <link rel="shortcut icon" href="{% static 'main/img/icon_clinic_title.jpg' %}" type="image/x-icon">
+</head>
+<body>
+    <header id="main_header">
+        <form action="{% url 'main' %}" method="get">
+            <button type="submit">Назад</button>
+            <h1>Профиль</h1>
+        </form>
+    </header>
+
+    <main>
+        <form action="{% url 'user_profile' %}" method="POST">{% csrf_token %}
+            <span>
+                <div id="image">
+                    <img src="{% static 'main/img/empty_user_photo.jpg' %}">
+                    <input type="file" value="Добавить фото" name="photo">
+                </div>
+                <div id="info">
+                    <h1>Ваше имя: {{ user.name }}</h1>
+                    <h1>Ваша фамилия: {{ user.surname }}</h1>
+                    <h1>Ваш пол: {{ user.pol }}</h1>
+                    <h1>Ваш возраст: {{ user.age }}</h1>
+                    <h1>Ваш номер телефона: {{ user.phone }}</h1>
+                    <h1>Ваша электронная почта: {{ user.email }}</h1>
+                </div>
+            </span>
+            <button type="submit">Выйти из аккаунта</button>
+        </form>
+    </main>
+</body>
+</html>

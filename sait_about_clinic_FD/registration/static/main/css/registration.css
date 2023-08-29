@@ -1,0 +1,141 @@
+body {
+    font-size: 24px;
+    background: linear-gradient(to top, rgb(55, 55, 255), rgb(170, 170, 255));
+    height: 180vh;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#main_header {
+    float: top;
+    position: fixed;
+    z-index: 3;
+    background: linear-gradient(to left, rgb(141, 141, 255), rgb(89, 89, 255));
+    width: 101%;
+    height: 12%;
+    top: 0px;
+    left: 0px;
+    border-bottom: 4px rgb(0, 32, 159) solid;
+}
+
+#main_header h1 {
+    margin: 15px;
+    margin-left: 40%;
+}
+
+#main_header button {
+    font-size: 32px;
+    width: 10%;
+    height: 60%;
+    margin: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgb(70, 70, 255), rgb(134, 134, 255));
+    float: left;
+    transition: all .6s ease;
+    box-shadow: 3px 3px 3px;
+}
+#main_header button:hover {
+    translate: -10px;
+    transform: scale(1.05);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px;
+}
+
+
+
+main {
+    margin-top: 15vh;
+}
+
+
+
+form {
+    height: 160vh;
+    border-radius: 20px;
+    width: 22vw;
+    border: 3px rgb(12, 12, 111) solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 10px 5px;
+}
+
+
+form label {
+    margin-top: 6vh;
+    font-size: 32px;
+}
+
+form input {
+    background: linear-gradient(to top, rgb(188, 188, 255), rgb(202, 202, 255));
+    text-align: center;
+    font-size: 28px;
+    margin-top: 1vh;
+    width: 75%;
+    height: 6vh;
+    border: 2px rgb(0, 0, 114) solid;
+    border-radius: 8px;
+    transition: all .8s ease;
+}
+form input:hover {
+    transform: scale(1.05);
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px 1px;
+}
+form input:focus {
+    background: linear-gradient(to top, rgb(120, 120, 255), rgb(175, 175, 255));
+    width: 80%;
+}
+
+
+form span {
+    display: flex;
+    position: relative;
+    top: -10px;
+}
+
+form span label {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+
+form span input {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: +35px;
+}
+form span input:hover {
+    transform: none;
+    box-shadow: none;
+    border: none;
+}
+form span input:focus {
+    width: 30px;
+}
+
+
+
+form button {
+    font-size: 28px;
+    width: 86%;
+    height: 5%;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px rgb(0, 0, 142) solid;
+    background: linear-gradient(to top, rgb(108, 108, 255), rgb(142, 142, 255), rgb(101, 101, 255));
+    transition: all .5s ease;
+}
+form button:hover {
+    transform: scale(1.05);
+    border-radius: 15px;
+}
+
+
+
+
