@@ -49,7 +49,11 @@ def user_profile(request):
     # Вход в аккаунт и создание куки
     elif request.method == 'POST' and request.META.get('HTTP_REFERER') == 'http://127.0.0.1:8000/registration/user_authentication?':
         if not request.COOKIES.get('user_id'):
-            user = Registers.objects.get(name = request.POST['FIO'].split()[1], surname = request.POST['FIO'].split()[0],
+            try:
+                user = Registers.objects.get(name = request.POST['FIO'].split()[1], surname = request.POST['FIO'].split()[0],
+                                         password = request.POST['password'])
+            except:
+                user = Registers.objects.get(name = request.POST['FIO'].split()[0], surname = request.POST['FIO'].split()[1],
                                          password = request.POST['password'])
             
             content = render(request, 'registration/user_profile.html', {"user": user})
